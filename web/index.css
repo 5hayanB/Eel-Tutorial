@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(61, 61, 61);
+}
+.content{
+    margin-top: 20px
+}
+h1 {
+    color: rgb(255, 136, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+form {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+ul {
+    list-style-type: none
+}
+option {
+    font-family: 'Jetbrains Mono'
+}
+select {
+    width: 100px
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0px 50px
+}
+.sel {
+    padding-left: 20px
+}
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>EEL</title>
+        <link
+            rel="stylesheet"
+            href="index.css"
+            type="text/css"
+        />
+        <script
+            src="/eel.js"
+            type="text/javascript"
+        ></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <h1 class="content">EEL TASK</h1>
+            <form class="content">
+                <table>
+                <!-- Core -->
+                    <tr id="row1">
+                        <td>
+                            <label for="core">Core Type:</label>
+                        </td>
+                        <td class="sel">
+                            <select
+                                name="core"
+                                id="core"
+                            >
+                                <option value="none">Select</option>
+                                <option value="rvwmo">RVWMO</option>
+                                <option value="rv32i">RV32I</option>
+                                <option value="rv32e">RV32E</option>
+                                <option value="rv64i">RV64I</option>
+                                <option value="rv128i">RV128I</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Bus Protocol -->
+                    <tr>
+                        <td>
+                            <label for="bus_protocol">Bus Protocol:</label>
+                        </td>
+                        <td class="sel">
+                            <select
+                                name="bus_protocol"
+                                id="bus_protocol"
+                            >
+                                <option value="none">Select</option>
+                                <option value="ahb">AHB</option>
+                                <option value="wishbone">Wishbone</option>
+                                <option value="axi4">AXI4</option>
+                                <option value="ace">ACE</option>
+                                <option value="chi">CHI</option>
+                                <option value="tilelink">TileLink</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Devices -->
+                    <tr>
+                        <td>
+                            <label for="device">Choose Devices:</label>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="checkbox"
+                                        name="uart"
+                                        id="uart"
+                                        value="uart"
+                                    />
+                                    <label for="uart">UART</label>
+                                </li>
+                                <li>
+                                    <input
+                                        type="checkbox"
+                                        name="spi"
+                                        id="spi"
+                                        value="spi"
+                                    />
+                                    <label for="spi">SPI</label>
+                                </li>
+                                <li>
+                                    <input
+                                        type="checkbox"
+                                        name="i2c"
+                                        id="i2c"
+                                        value="i2c"
+                                    />
+                                    <label for="i2c">I2C</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <button id="btn" onclick="generate()">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
